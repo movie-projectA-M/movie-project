@@ -1,0 +1,59 @@
+{
+  "movies": [
+    {
+      "id": 0,
+      "title": "Shrek",
+      "rating": 5
+    },
+    {
+      "id": 1,
+      "title": "The Shawshank Redemption",
+      "rating": 9.3
+    },
+    {
+      "id": 2,
+      "title": "The Godfather",
+      "rating": 9.2
+    },
+    {
+      "id": 3,
+      "title": "The Dark Knight",
+      "rating": 9.0
+    },
+    {
+      "id": 4,
+      "title": "Pulp Fiction",
+      "rating": 8.9
+    },
+    {
+      "id": 5,
+      "title": "Schindler's List",
+      "rating": 8.9
+    },
+    {
+      "id": 6,
+      "title": "Forrest Gump",
+      "rating": 8.8
+    },
+    {
+      "id": 7,
+      "title": "The Matrix",
+      "rating": 8.7
+    },
+    {
+      "id": 8,
+      "title": "Inception",
+      "rating": 8.7
+    },
+    {
+      "id": 9,
+      "title": "The Silence of the Lambs",
+      "rating": 8.6
+    },
+    {
+      "id": 10,
+      "title": "The Departed",
+      "rating": 8.5
+    }
+  ]
+}
