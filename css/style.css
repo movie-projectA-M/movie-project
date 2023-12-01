@@ -9,3 +9,17 @@
 h1{
 
 }
+
+#deletebtn{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#searchbar{
+    padding-right: 1080px;
+
+}
+
+.navbar-light{
+    justify-items: stretch;
+}
