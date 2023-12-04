@@ -20,7 +20,6 @@
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">All</a>
-
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Adventure</a>
@@ -34,36 +33,54 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Crime</a>
                     </li>
-
               </ul>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <nav class="navbar navbar-light bg-light">
-                                    <form class="d-flex">
-                                        <div class="ml-auto">
-                                            <button class="btn btn-success" type="button" id="addmoviebtn">+ Add Movie</button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <nav class="navbar navbar-light bg-light">
+                                <form class="d-flex" id="add-movie">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="addBtn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                       +Add Movie
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Add a New Movie</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <!-- Input fields for movie details -->
+                                                    <div class="mb-3">
+                                                        <label for="movieTitle" class="form-label">Title:</label>
+                                                        <input type="text" class="form-control" id="movieTitle" placeholder="Enter movie title">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="movieRating" class="form-label">Rating:</label>
+                                                        <input type="number" class="form-control" id="movieRating" placeholder="Enter movie rating">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="movieGenre" class="form-label">Genre:</label>
+                                                        <input type="text" class="form-control" id="movieGenre" placeholder="Enter movie genre">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="movieSummary" class="form-label">Summary:</label>
+                                                        <textarea class="form-control" id="movieSummary" placeholder="Enter movie summary"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Add Movie</button>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </form>
-                                </nav>
-                            </li>
-                        </ul>
-                    </div>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown link
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <div class="navbar navbar-light bg-light">
-                    <form class="container-fluid justify-content-end">
-                        <button class="btn btn-success ms-auto" type="button" data-bs-toggle="model" id="addmoviebtn">+ Add Movie</button>
-                    </form>
+                                    </div>
+                                </form>
+                            </nav>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -85,8 +102,6 @@
         <span class="visually-hidden">Loading...</span>
     </div>
 </div>
-
-
 <div class="page-wrapper">
     <div class="container-fluid flex-grow-1">
         <div class="row">

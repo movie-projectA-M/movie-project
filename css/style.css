@@ -14,10 +14,12 @@ h1 {
 
 }
 
-#addmoviebtn {
+.addBtn {
     display: flex;
     justify-content: flex-end;
-
+    font-size: 13px;
+    background-color: #1A8655;
+    border-radius: 10px;
 
 }
 
