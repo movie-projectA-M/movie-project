@@ -3,7 +3,8 @@
     {
       "id": 0,
       "title": "Shrek",
-      "rating": 8.5
+      "rating": 8.5,
+      "Genre": "Adventure"
     },
     {
       "id": 1,
@@ -18,7 +19,7 @@
     {
       "id": 3,
       "title": "The Dark Knight",
-      "rating": 9.0
+      "rating": 9
     },
     {
       "id": 4,
@@ -54,6 +55,226 @@
       "id": 10,
       "title": "The Departed",
       "rating": 8.5
+    },
+    {
+      "title": "micah",
+      "rating": "4",
+      "id": 11
+    },
+    {
+      "title": "micah",
+      "rating": "4",
+      "id": 12
+    },
+    {
+      "title": "micah",
+      "rating": "4",
+      "id": 13
+    },
+    {
+      "title": "micah",
+      "rating": "4",
+      "id": 14
+    },
+    {
+      "title": "micah",
+      "rating": "4",
+      "id": 15
+    },
+    {
+      "title": "micah",
+      "rating": "4",
+      "id": 16
+    },
+    {
+      "title": "micah",
+      "rating": "4",
+      "id": 17
+    },
+    {
+      "title": "micah",
+      "rating": "4",
+      "id": 18
+    },
+    {
+      "title": "micah",
+      "rating": "4",
+      "id": 19
+    },
+    {
+      "title": "micah",
+      "rating": "4",
+      "id": 20
+    },
+    {
+      "title": "micah",
+      "rating": "4",
+      "id": 21
+    },
+    {
+      "title": "micah",
+      "rating": "4",
+      "id": 22
+    },
+    {
+      "title": "micah",
+      "rating": "4",
+      "id": 23
+    },
+    {
+      "title": "micah",
+      "rating": "4",
+      "id": 24
+    },
+    {
+      "title": "micah",
+      "rating": "4",
+      "id": 25
+    },
+    {
+      "title": "pooop",
+      "rating": "3",
+      "id": 26
+    },
+    {
+      "title": "nathan",
+      "rating": "4",
+      "id": 27
+    },
+    {
+      "title": "movie",
+      "rating": "3",
+      "id": 28
+    },
+    {
+      "title": "movie",
+      "rating": "3",
+      "id": 29
+    },
+    {
+      "title": "movie",
+      "rating": "3",
+      "id": 30
+    },
+    {
+      "title": "movie",
+      "rating": "3",
+      "id": 31
+    },
+    {
+      "title": "movie",
+      "rating": "3",
+      "id": 32
+    },
+    {
+      "title": "movie",
+      "rating": "3",
+      "id": 33
+    },
+    {
+      "title": "movie",
+      "rating": "3",
+      "id": 34
+    },
+    {
+      "title": "movie",
+      "rating": "3",
+      "id": 35
+    },
+    {
+      "title": "movie",
+      "rating": "3",
+      "id": 36
+    },
+    {
+      "title": "movie",
+      "rating": "3",
+      "id": 37
+    },
+    {
+      "title": "movie",
+      "rating": "3",
+      "id": 38
+    },
+    {
+      "title": "movie",
+      "rating": "3",
+      "id": 39
+    },
+    {
+      "title": "movie",
+      "rating": "3",
+      "id": 40
+    },
+    {
+      "title": "movie",
+      "rating": "3",
+      "id": 41
+    },
+    {
+      "title": "movie",
+      "rating": "3",
+      "id": 42
+    },
+    {
+      "title": "movie",
+      "rating": "3",
+      "id": 43
+    },
+    {
+      "title": "movie",
+      "rating": "3",
+      "id": 44
+    },
+    {
+      "title": "movie",
+      "rating": "3",
+      "id": 45
+    },
+    {
+      "title": "movie",
+      "rating": "3",
+      "id": 46
+    },
+    {
+      "title": "movie",
+      "rating": "3",
+      "id": 47
+    },
+    {
+      "title": "movie",
+      "rating": "3",
+      "id": 48
+    },
+    {
+      "title": "movie",
+      "rating": "3",
+      "id": 49
+    },
+    {
+      "title": "movie",
+      "rating": "3",
+      "id": 50
+    },
+    {
+      "title": "movie",
+      "rating": "3",
+      "id": 51
+    },
+    {
+      "title": "text 1",
+      "rating": "2",
+      "id": 52
+    },
+    {
+      "title": "rvrvrv",
+      "rating": "3",
+      "id": 53
+    },
+    {
+      "title": "thfef ",
+      "rating": "3",
+      "id": 54
     }
   ]
 }
