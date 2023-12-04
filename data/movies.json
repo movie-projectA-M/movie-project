@@ -1,24 +1,9 @@
 {
   "movies": [
     {
-      "id": 0,
-      "title": "Shrek",
-      "rating": 8.5
-    },
-    {
-      "id": 1,
-      "title": "The Shawshank Redemption",
-      "rating": 9.3
-    },
-    {
-      "id": 2,
-      "title": "The Godfather",
-      "rating": 9.2
-    },
-    {
       "id": 3,
       "title": "The Dark Knight",
-      "rating": 9.0
+      "rating": 9
     },
     {
       "id": 4,
@@ -49,11 +34,6 @@
       "id": 9,
       "title": "The Silence of the Lambs",
       "rating": 8.6
-    },
-    {
-      "id": 10,
-      "title": "The Departed",
-      "rating": 8.5
     }
   ]
 }
