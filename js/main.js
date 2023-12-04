@@ -102,16 +102,6 @@ const createMovieElement = (movie) =>{
         movieElement.remove();
     });
 
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item"> Rating : ${rating}</li>
-            <li class="list-group-item">${id}</li>
-            <li class="list-group-item">${Genre}</li>
-        </ul>
-        <div class="card-body">
-        </div>
-    </div>
-    </div>
-`
     return movieElement;
 }
 const renderMovieElement = async (movies) =>{
@@ -134,6 +124,7 @@ const searchMovies = async () => {
 };
 
 document.getElementById('searchbar').addEventListener('input', searchMovies);
+
 
 //MAIN
 (async ()=>{

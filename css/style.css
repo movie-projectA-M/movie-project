@@ -17,6 +17,7 @@ h1 {
 #addmoviebtn {
     display: flex;
     justify-content: flex-end;
+    font-size: 13px;
 
 
 }
