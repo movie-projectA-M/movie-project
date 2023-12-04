@@ -35,7 +35,7 @@ const deleteMovie = async (id) => {
     const data = await response.json();
     return data;
 };
-export const postMovie = async ({ title,rating }) => {
+ const postMovie = async ({ title,rating }) => {
     const newBook = {
         title,
         rating,
@@ -54,6 +54,8 @@ export const postMovie = async ({ title,rating }) => {
     const data = await response.json();
     return data;
 };
+
+
 //MAIN
 (async ()=>{
 
