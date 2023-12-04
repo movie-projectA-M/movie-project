@@ -1,4 +1,7 @@
-
+const addModal = () =>{
+    const modal = new bootstrap.modal (document.getElementById(`addbtnmodal`))
+    modal.show
+}
 function showContent() {
 
     document.getElementById('loading-screen').style.display = 'none';
@@ -64,7 +67,7 @@ const deleteMovie = async (id) => {
 };
 
 const createMovieElement = (movie) =>{
-   let {title, rating, Genre, id} = movie;
+   let {title, rating, genre, summary, id} = movie;
    title = movie.title;
    rating = movie.rating;
    id = movie.id;
@@ -84,12 +87,12 @@ const createMovieElement = (movie) =>{
                         </ul>
                     </div>
                 </div>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text"></p>
             </div>
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">Rating : ${rating}</li>
-                <li class="list-group-item">${id}</li>
-                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">${genre}</li>
+                 <li class="list-group-item">${summary}</li>
             </ul>
             <div class="card-body">
             </div>
@@ -115,21 +118,35 @@ const renderMovieElement = async (movies) =>{
     parentElement.innerHTML = '';
     parentElement.appendChild(moviesFragment);
 }
-
 const searchMovies = async () => {
     const searchTerm = document.getElementById('searchbar').value.toLowerCase();
     const allMovies = await getMovies();
     const filteredMovies = allMovies.filter(movie => movie.title.toLowerCase().includes(searchTerm));
     await renderMovieElement(filteredMovies);
 };
-
 document.getElementById('searchbar').addEventListener('input', searchMovies);
 
 
 //MAIN
 (async ()=>{
     const movies = await getMovies();
-    await renderMovieElement(movies)
-    showContent()
-    moviePost()
+    await renderMovieElement(movies);
+    showContent();
+    const addMovieForm = document.querySelector("#add-movie");
+    addMovieForm.addEventListener("submit", e=>{
+       e.preventDefault();
+       // grab all the input values
+        const movie = {
+            title: "",
+            rating: "",
+            genre: "",
+            summary: ""
+        }
+        // await postMovie(movie)
+        // const movieElem = createMovieElement(movie);
+        // const parentElement = document.querySelector("#movieCard")
+        // parentElement.appendChild(movieElem);
+        addMovieForm.reset();
+        // hide the modal again
+    });
 })();
