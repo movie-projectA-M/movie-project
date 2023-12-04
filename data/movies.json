@@ -1,6 +1,22 @@
 {
   "movies": [
     {
+      "id": 0,
+      "title": "Shrek",
+      "rating": 8.5,
+      "Genre": "Adventure"
+    },
+    {
+      "id": 1,
+      "title": "The Shawshank Redemption",
+      "rating": 9.3
+    },
+    {
+      "id": 2,
+      "title": "The Godfather",
+      "rating": 9.2
+    },
+    {
       "id": 3,
       "title": "The Dark Knight",
       "rating": 9

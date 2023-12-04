@@ -1,3 +1,11 @@
+
+function showContent() {
+
+    document.getElementById('loading-screen').style.display = 'none';
+
+    document.getElementById('movieCard').style.display = 'block';
+}
+setTimeout(showContent, 3000);
 const getMovies = async () => {
     const url = "http://localhost:3000/movies";
     const options = {
@@ -56,7 +64,7 @@ const deleteMovie = async (id) => {
 };
 
 const createMovieElement = (movie) =>{
-   let {title, rating, id} = movie;
+   let {title, rating, Genre, id} = movie;
    title = movie.title;
    rating = movie.rating;
    id = movie.id;
@@ -94,6 +102,16 @@ const createMovieElement = (movie) =>{
         movieElement.remove();
     });
 
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"> Rating : ${rating}</li>
+            <li class="list-group-item">${id}</li>
+            <li class="list-group-item">${Genre}</li>
+        </ul>
+        <div class="card-body">
+        </div>
+    </div>
+    </div>
+`
     return movieElement;
 }
 const renderMovieElement = async (movies) =>{
@@ -121,4 +139,6 @@ document.getElementById('searchbar').addEventListener('input', searchMovies);
 (async ()=>{
     const movies = await getMovies();
     await renderMovieElement(movies)
+    showContent()
+    moviePost()
 })();
