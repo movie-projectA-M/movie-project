@@ -1,5 +1,6 @@
 const getMovies = async () => {
     const url = "http://localhost:3000/movies";
+    console.log(getMovies())
     const options = {
         method: "GET",
         headers: {
@@ -54,6 +55,7 @@ const deleteMovie = async (id) => {
     const data = await response.json();
     return data;
 };
+
 
 
 //MAIN
