@@ -104,6 +104,7 @@ const createMovieElement = (movie) =>{
         await deleteMovie(movieId);
         movieElement.remove();
     });
+
     return movieElement;
 }
 const renderMovieElement = async (movies) =>{
@@ -124,6 +125,7 @@ const searchMovies = async () => {
     await renderMovieElement(filteredMovies);
 };
 document.getElementById('searchbar').addEventListener('input', searchMovies);
+
 
 //MAIN
 (async ()=>{
