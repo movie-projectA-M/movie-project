@@ -18,6 +18,7 @@ h1 {
     display: flex;
     justify-content: flex-end;
 
+
 }
 
 #searchbar {
@@ -35,4 +36,8 @@ h1 {
 }
 .nav-link {
     margin-right: 50px;
+}
+
+#navbarCollapse {
+    padding-left: 684.3px;
 }
