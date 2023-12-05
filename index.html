@@ -34,28 +34,16 @@
                         <a class="nav-link" href="#">Crime</a>
                     </li>
               </ul>
-
-
                 </ul>
-
-
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <nav class="navbar navbar-light bg-light">
-
                                 <form class="d-flex" id="add-movie">
                                     <!-- Button trigger modal -->
-
-                                    <button type="button" data-bs-dismiss="modal" aria-label="Close" class="addBtn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                       +Add Movie
-
                                     <button type="button" class="addBtn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="addModal()">
                                         +Add Movie
-
                                     </button>
-
-                                    <!-- Modal -->
                                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
@@ -120,6 +108,39 @@
 
             <div id="movieCard" class="col d-flex flex-wrap flex-row">
             </div>
+        </div>
+    </div>
+    <div class="modal" id="editMovieModal" tabindex="-1" aria-labelledby="editMovieModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <form class="modal-content" id="edit-submit">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="editMovieModalLabel">Edit Movie</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Input fields for editing movie details -->
+                    <div class="mb-3">
+                        <label for="editMovieTitle" class="form-label">Title:</label>
+                        <input name="title" type="text" class="form-control" id="editMovieTitle" placeholder="Enter movie title" value="Existing Movie Title">
+                    </div>
+                    <div class="mb-3">
+                        <label for="editMovieRating" class="form-label">Rating:</label>
+                        <input name="rating" type="number" class="form-control" id="editMovieRating" placeholder="Enter movie rating" value="8.0">
+                    </div>
+                    <div class="mb-3">
+                        <label for="editMovieGenre" class="form-label">Genre:</label>
+                        <input name="genre" type="text" class="form-control" id="editMovieGenre" placeholder="Enter movie genre" value="Existing Genre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="editMovieSummary" class="form-label">Summary:</label>
+                        <textarea name="summary" class="form-control" id="editMovieSummary" placeholder="Enter movie summary">Existing Movie Summary</textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button id="saveChanges" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Save Changes</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
