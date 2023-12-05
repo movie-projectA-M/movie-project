@@ -48,16 +48,6 @@
       "rating": 8.5,
       "genre": "Crime, Drama, Thriller",
       "summary": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston."
-    },
-    {
-      "title": "The Dark Knight",
-      "rating": "10",
-      "id": 13
-    },
-    {
-      "title": "micah",
-      "rating": "",
-      "id": 14
     }
   ]
 }
