@@ -123,28 +123,33 @@ const searchMovies = async () => {
     const filteredMovies = allMovies.filter(movie => movie.title.toLowerCase().includes(searchTerm));
     await renderMovieElement(filteredMovies);
 };
-document.getElementById('searchbar').addEventListener('input', searchMovies);
 
 //MAIN
 (async ()=>{
+    document.getElementById('searchbar').addEventListener('input', searchMovies);
     const movies = await getMovies();
     await renderMovieElement(movies);
     showContent();
-    const addMovieForm = document.querySelector("#add-movie");
-    addMovieForm.addEventListener("submit", e=>{
-       e.preventDefault();
-       // grab all the input values
+    const addMovieBtn = document.querySelector("#addMovie");
+    addMovieBtn.addEventListener("click", async e => {
+        e.preventDefault();
+        // grab all the input values
         const movie = {
-            title: "",
-            rating: "",
-            genre: "",
-            summary: ""
+            title: document.querySelector('#movieTitle').value,
+            rating: document.querySelector('#movieRating').value,
+            summary: document.querySelector('#movieSummary').value,
+            genre: document.querySelector('#movieGenre').value,
         }
-        // await postMovie(movie)
-        // const movieElem = createMovieElement(movie);
-        // const parentElement = document.querySelector("#movieCard")
-        // parentElement.appendChild(movieElem);
-        addMovieForm.reset();
-        // hide the modal again
+        await postMovie(movie);
+        const movies = await getMovies();
+        await renderMovieElement(movies);
     });
+
 })();
+
+// await postMovie(movie)
+// const movieElem = createMovieElement(movie);
+// const parentElement = document.querySelector("#movieCard")
+// parentElement.appendChild(movieElem);
+// addMovieForm.reset();
+// hide the modal again

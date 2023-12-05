@@ -40,7 +40,7 @@
                             <nav class="navbar navbar-light bg-light">
                                 <form class="d-flex" id="add-movie">
                                     <!-- Button trigger modal -->
-                                    <button type="button" class="addBtn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <button type="button" data-bs-dismiss="modal" aria-label="Close" class="addBtn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                        +Add Movie
                                     </button>
                                     <!-- Modal -->
@@ -54,7 +54,7 @@
                                                 <div class="modal-body">
                                                     <!-- Input fields for movie details -->
                                                     <div class="mb-3">
-                                                        <label for="movieTitle" class="form-label">Title:</label>
+                                                        <label  for="movieTitle" class="form-label">Title:</label>
                                                         <input type="text" class="form-control" id="movieTitle" placeholder="Enter movie title">
                                                     </div>
                                                     <div class="mb-3">
@@ -72,7 +72,7 @@
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                    <button type="button" class="btn btn-primary">Add Movie</button>
+                                                    <button id="addMovie" type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Add Movie</button>
                                                 </div>
                                             </div>
                                         </div>
