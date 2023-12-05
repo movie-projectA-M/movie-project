@@ -18,6 +18,10 @@ h1 {
     display: flex;
     justify-content: flex-end;
     font-size: 13px;
+    border-radius: 999px;
+    background-color: #1A8655;
+    border-color: white;
+    height: 30px;
 }
 
 #searchbar {
@@ -75,5 +79,6 @@ h1 {
     z-index: 99;
 }
 #navbarCollapse {
-    padding-left: 684.3px;
+    padding-left: 698px;
 }
+
