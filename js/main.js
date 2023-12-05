@@ -136,7 +136,6 @@ const searchMovies = async () => {
 
 
 //MAIN
-
 (async ()=>{
     document.getElementById('searchbar').addEventListener('input', searchMovies);
     const movies = await getMovies();
@@ -155,6 +154,7 @@ const searchMovies = async () => {
         await postMovie(movie);
         const movies = await getMovies();
         await renderMovieElement(movies);
+    });
 })();
 
 // await postMovie(movie)
