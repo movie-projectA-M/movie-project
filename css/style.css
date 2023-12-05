@@ -4,7 +4,8 @@
 .card {
     justify-content: center;
     align-items: unset;
-   display: inline-block;
+    display: inline-block;
+
 }
 h1 {
     color: #769E47;
@@ -31,6 +32,7 @@ h1 {
 
 .navbar-light {
     justify-items: stretch;
+    opacity: 0;
 }
 
 #navbarNavDropdown {
@@ -79,6 +81,36 @@ h1 {
     z-index: 99;
 }
 #navbarCollapse {
-    padding-left: 698px;
+    padding-left: 1297.2px;
 }
 
+body{
+    background-image: url("../images/Joker.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: cycleBackground 10s infinite;
+}
+
+@keyframes cycleBackground {
+    0% {
+        background-image: url("../images/Joker.jpeg");
+    }
+    25% {
+        background-image: url("../images/Inception.jpeg");
+    }
+    50% {
+        background-image: url("../images/The Godfather.jpeg");
+    }
+    75% {
+        background-image: url("../images/PulpFiction.jpeg");
+    }
+    100% {
+        background-image: url("../images/Joker.jpeg");
+    }
+}
+
+.card {
+    opacity: .80;
+
+}

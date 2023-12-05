@@ -65,6 +65,12 @@
     },
     {
       "id": 10,
+
+      "title": "The Departed",
+      "rating": 8.5,
+      "genre": "Crime, Drama, Thriller",
+      "summary": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston."
+
       "title": "Fight Club",
       "rating": "8.8",
       "genre": "Drama",
