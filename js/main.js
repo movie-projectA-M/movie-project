@@ -133,44 +133,33 @@ const searchMovies = async () => {
     const filteredMovies = allMovies.filter(movie => movie.title.toLowerCase().includes(searchTerm));
     await renderMovieElement(filteredMovies);
 };
-document.getElementById('searchbar').addEventListener('input', searchMovies);
 
 
 //MAIN
-// MAIN
-(async () => {
+
+(async ()=>{
+    document.getElementById('searchbar').addEventListener('input', searchMovies);
     const movies = await getMovies();
     await renderMovieElement(movies);
     showContent();
-
-    const addMovieForm = document.querySelector("#add-movie");
-    addMovieForm.addEventListener("submit", async (e) => {
+    const addMovieBtn = document.querySelector("#addMovie");
+    addMovieBtn.addEventListener("click", async e => {
         e.preventDefault();
-
-        // Grab input values from the form
-        const title = document.getElementById("movieTitle").value;
-        const rating = document.getElementById("movieRating").value;
-        const genre = document.getElementById("movieGenre").value;
-        const summary = document.getElementById("movieSummary").value;
-
-        // Create a movie object
+        // grab all the input values
         const movie = {
-            title,
-            rating,
-            genre,
-            summary,
-        };
-
-        // Post the movie to the server
+            title: document.querySelector('#movieTitle').value,
+            rating: document.querySelector('#movieRating').value,
+            summary: document.querySelector('#movieSummary').value,
+            genre: document.querySelector('#movieGenre').value,
+        }
         await postMovie(movie);
-
-        // Retrieve the updated list of movies and render them
-        const updatedMovies = await getMovies();
-        await renderMovieElement(updatedMovies);
-
-        // Reset the form and hide the modal
-        addMovieForm.reset();
-        const modal = new bootstrap.Modal(document.getElementById("exampleModal"));
-        modal.hide();
-    });
+        const movies = await getMovies();
+        await renderMovieElement(movies);
 })();
+
+// await postMovie(movie)
+// const movieElem = createMovieElement(movie);
+// const parentElement = document.querySelector("#movieCard")
+// parentElement.appendChild(movieElem);
+// addMovieForm.reset();
+// hide the modal again
